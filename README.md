@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/jrc17/nft-preview-card-component-main]
+- Live Site URL: [https://jrc17.github.io/nft-preview-card-component-main/]
 
 ### Built with
 
@@ -78,4 +78,4 @@ I learn how to create the hover effect over an image.
 
 ## Author
 
-- Frontend Mentor - [@jayanthi](https://www.frontendmentor.io/profile/jayanthi)
+- Frontend Mentor - [@jrc17](https://www.frontendmentor.io/profile/jrc17)
