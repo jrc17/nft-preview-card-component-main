@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
+  color: #fff;
+  line-height: 1;
+
+  /* width: 1440px; */
+  /* margin: 0 auto; */
+}
+.nft {
+  background-color: #14253d;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 100px auto;
+  width: 300px;
+
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 30px 35px 40px rgba(0, 0, 0, 0.2);
+}
+.images {
+  position: relative;
+}
+.images::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00fff7;
+  border-radius: 8px;
+  opacity: 0;
+}
+.images:hover .nft-view-image {
+  opacity: 1;
+}
+.images:hover::before {
+  opacity: 0.5;
+}
+.nft-image {
+  width: 100%;
+  height: 100%;
+
+  align-self: center;
+  border-radius: 8px;
+}
+.nft-image:hover {
+  cursor: pointer;
+}
+
+.nft-view-image {
+  width: 36px;
+  height: 36px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+}
+
+.nft-name:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+.nft-description {
+  font-size: 15px;
+  color: rgba(139, 172, 218, 0.808);
+  line-height: 1.5;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(139, 172, 218, 0.39);
+  padding-bottom: 16px;
+  align-items: center;
+  font-size: 12px;
+  /* flex-direction: row; */
+}
+.price,
+.time {
+  /* font-size: 15px; */
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.price-amount {
+  color: #00fff7;
+}
+.time-days {
+  color: rgba(139, 172, 218, 0.808);
+}
+.author {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+  align-items: center;
+
+  font-size: 12px;
+  color: rgba(139, 172, 218, 0.808);
+}
+.author-image {
+  width: 15%;
+  /* height: auto; */
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.author-name {
+  color: #fff;
+}
+.author-name:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
