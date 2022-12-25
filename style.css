@@ -17,6 +17,7 @@ body {
 
   display: flex;
   flex-direction: column;
+
   gap: 24px;
   margin: 100px auto;
   width: 300px;
@@ -68,13 +69,15 @@ body {
 
   opacity: 0;
 }
-
+.nft-name {
+  font-size: 24px;
+}
 .nft-name:hover {
   cursor: pointer;
   color: #00fff7;
 }
 .nft-description {
-  font-size: 15px;
+  font-size: 18px;
   color: rgba(139, 172, 218, 0.808);
   line-height: 1.5;
 }
@@ -124,10 +127,10 @@ body {
   cursor: pointer;
   color: #00fff7;
 }
-.attribution {
+footer {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
+footer a {
   color: hsl(228, 45%, 44%);
 }
