@@ -9,22 +9,25 @@ body {
   color: #fff;
   line-height: 1;
 
-  /* width: 1440px; */
-  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 main {
   background-color: #14253d;
 
+  max-width: 22rem;
+
   display: flex;
   flex-direction: column;
 
-  gap: 24px;
-  margin: 100px auto;
-  width: 22rem;
-
-  padding: 24px;
+  gap: 1.45rem;
+  margin: 2rem auto;
+  padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 30px 35px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 30px 35px 30px rgba(0, 0, 0, 0.2);
 }
 .images {
   position: relative;
@@ -40,6 +43,7 @@ main {
   background-color: #00fff7;
   border-radius: 8px;
   opacity: 0;
+  overflow: hidden;
 }
 .images:hover .nft-view-image {
   opacity: 1;
@@ -69,15 +73,22 @@ main {
 
   opacity: 0;
 }
-.nft-name {
-  font-size: 24px;
+.nft-name a {
+  font-size: 1.55rem;
 }
-.nft-name:hover {
+.nft-name a:link,
+.nft-name a:visited {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+.nft-name a:hover,
+.nft-name a:active {
   cursor: pointer;
   color: #00fff7;
 }
 .nft-description {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: rgba(139, 172, 218, 0.808);
   line-height: 1.5;
 }
@@ -85,18 +96,19 @@ main {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px solid rgba(139, 172, 218, 0.39);
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.75;
+  gap: 0.7rem;
   /* flex-direction: row; */
 }
 .price,
 .time {
-  /* font-size: 15px; */
+  font-size: 0.937rem;
 
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.4rem;
 }
 .price-amount {
   color: #00fff7;
@@ -107,28 +119,32 @@ main {
 .author {
   display: flex;
   /* justify-content: space-between; */
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
 
-  font-size: 12px;
+  font-size: 0.937rem;
   color: rgba(139, 172, 218, 0.808);
 }
 .author-image {
   width: 15%;
-  /* height: auto; */
+
   border: 2px solid #fff;
   border-radius: 50%;
 }
 
-.author-name {
+.author-name a:link,
+.author-name a:visited {
+  cursor: pointer;
   color: #fff;
+  text-decoration: none;
 }
-.author-name:hover {
+.author-name a:hover,
+.author-name a:active {
   cursor: pointer;
   color: #00fff7;
 }
 footer {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 footer a {
